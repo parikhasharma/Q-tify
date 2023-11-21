@@ -5,7 +5,7 @@ function Card() {
     <div className='card-wrapper'>
         <div className='card'>
             <div className='card-img-frame'>
-                <img className='card-img' src='Rectangle 2138.png'/>
+                <img className='card-img' src='Rectangle 2138.png' alt='no content available'/>
             </div>
             <div className='card-content'>
                 <div className='card-content-pill'>

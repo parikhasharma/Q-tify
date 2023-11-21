@@ -9,7 +9,7 @@ function Hero() {
                 <h1>Over thousands podcast episodes</h1>
             </div>
             <div className='hs-img-frame'>
-                <img className='hs-img' src='vibrating-headphone 1.png' />
+                <img className='hs-img' src='vibrating-headphone 1.png' alt='no content available'/>
             </div>
         </div>
     </div>
