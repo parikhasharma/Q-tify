@@ -10,7 +10,6 @@ function Navbar() {
         <SearchBox/>
         <Button>Give Feedback</Button>
     </div>
-  
   )
 }
 
