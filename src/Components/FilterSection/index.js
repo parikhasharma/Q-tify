@@ -21,7 +21,7 @@ function Filter({title,data,filter,executeFilter}) {
              )
             })}          
         </Tabs>
-        <Carousel data={data}/>
+        <Carousel data={data} navId='filter'/>
     </div>
   )
 }

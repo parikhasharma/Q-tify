@@ -26,8 +26,8 @@ function App() {
     <div>
       <Navbar/>    
       <Hero/> 
-      <Section title='Top Albums' data={topAlbums}/>
-      <Section title='New Albums' data={newAlbums}/>
+      <Section title='Top Albums' data={topAlbums} navId='ta'/>
+      <Section title='New Albums' data={newAlbums} navId='na'/>
       <Filter title='Songs' data={filteredSongs} filter={genres}
       executeFilter={(genre)=>{
         if(genre==="all"){

@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './carousel.css'
 
-function Carousel({data}) {
+function Carousel({data,navId}) {
   return (
     <div className='carousel-container'>
          <Swiper
@@ -21,8 +21,8 @@ function Carousel({data}) {
         //   type: 'fraction',
         // }}
         navigation= {{
-          nextEl: '.arrow-left',
-          prevEl: '.arrow-right',
+          nextEl: `.arrow-right-${navId}`,
+          prevEl: `.arrow-left-${navId}`,
         }}
         virtual
       >
@@ -33,8 +33,8 @@ function Carousel({data}) {
             </SwiperSlide> 
         )}
       </Swiper>
-      <div className="arrow-left arrow"><img src='/left.png' alt='no content'/></div>
-      <div className="arrow-right arrow"><img src='/right.png'  alt='no content'/></div>
+      <div className={`arrow-left-${navId} arrow-left arrow`}><img src='/left.png' alt='no content'/></div>
+      <div className={`arrow-right-${navId} arrow-right arrow`}><img src='/right.png'  alt='no content'/></div>
     </div>
   )
 }

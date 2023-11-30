@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './section.css'
 import Card from '../Card'
 import Carousel from '../Carousel'
-function Section({title,data}) {
+function Section({title,data,navId}) {
   const [isCollapsed,setIsCollapsed]=useState(false)
   return (
     <div className='section'>
@@ -12,7 +12,7 @@ function Section({title,data}) {
         setIsCollapsed(!isCollapsed)
       }}>{isCollapsed?'Show All' :'Collapse'}</h1>
       </div>
-       {isCollapsed?<Carousel data={data}/>: <div className='card-container'>
+       {isCollapsed?<Carousel data={data} navId={navId}/>: <div className='card-container'>
             {
             data.map((cardData)=> <Card key={cardData.id} imgSrc={cardData.image} followersCount={cardData.follows} label={cardData.title}/>
             )}
